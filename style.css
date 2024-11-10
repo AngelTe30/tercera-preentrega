@@ -1,0 +1,176 @@
+*::after,
+*::before,
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Style navbar*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 7rem;
+    background-color: #f6f5f2;
+    box-shadow: 1px 3px 1px #3b303010;
+}
+nav{
+    display: flex;
+    font-family:"Playfair Display", serif;
+    justify-content: space-between;
+    margin: auto;
+    font-size: 2.5vh;
+    font-weight: 700;
+}
+nav img{
+    padding: 0 1rem;
+    height: 6rem;
+    padding-right: 12rem ;
+}
+nav ul{
+    display: flex;
+}
+nav ul li {
+    margin: auto 1rem;
+    justify-content:space-around;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #3B3030;
+}
+nav .cart-shop{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav .cart-shop a{
+    padding-left: 15rem;
+    color: #3B3030;
+}
+
+nav .cart-shop a i{
+    padding-left: .5rem;
+}
+
+nav .cart-shop a i span{
+    font-size: 1rem;
+}
+
+/*tarjetas de productos*/
+.productos{
+    display: grid;
+    margin: 5rem auto;
+    width: 70rem;
+    height:80vh;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 2rem;
+}
+
+.productos .card{
+    height: 25rem;
+    width: 20rem;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  5px 5px 18px #8f8e8c,
+             -5px -5px 18px #ffffff;
+
+}
+
+.productos .card .image{
+    height: 40%;    
+}
+
+.productos .card .image img{
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit:cover;
+}
+
+.productos .card .name-product{
+    font-size: 4.5vh;
+    margin: 1rem;
+    color: #3B3030;
+}
+
+.productos .card .price{
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 4vh;
+    color:#7a5a5a;
+    font-family: "Roboto", system-ui;
+}
+.productos .card .price p{
+    padding-left: .2rem;
+}
+
+.productos .card #add{
+    margin: .5rem 25%;
+    justify-content: center;
+    align-items: center;
+
+}
+.productos .card #add button{
+    background-color: #3B3030;
+    color: #F0EBE3;
+    height: 2rem;
+    width: 10rem;
+    font-family: "Roboto", system-ui;
+    border-radius: 20px;
+}   
+
+.productos .card #add button:hover{
+    transition: .3s;
+    background-color: #7a5a5a;
+}
+.productos .card #add button:active{
+    transition: .3s;
+    background-color: #3f3333;
+}
+
+ .container-cart{
+    position:absolute;
+    top: 5rem;
+    right: 10px;
+
+    background-color: #fafafa;
+    width: 450px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    
+}
+
+.container-cart .row .info-cart{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+.container-cart .total{
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px #3B3030 solid;
+    margin: 1.75rem 1rem;
+    padding-top: .75rem;
+}
+
+.container-cart .cart-product .empty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    text-align: center;
+}
+.hidden-cart{
+    display: none;
+    animation-duration: 2s;
+}

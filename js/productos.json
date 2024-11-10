@@ -1,0 +1,37 @@
+[
+    {
+      "id": "electronico-1",
+      "imagen": "./images/auriculares.jpg",
+      "nombre": "Auriculares",
+      "precio": "800",
+      "stock": "8"
+    },
+    {
+      "id": "electronico-2",
+      "imagen": "./images/camara.jpg",
+      "nombre": "Camara fotografica",
+      "precio": "1500",
+      "stock": "9"
+    },
+    {
+      "id": "accesorio-1",
+      "imagen": "./images/lentes.jpg",
+      "nombre": "Lentes",
+      "precio": "750",
+      "stock": "7"
+    },
+    {
+      "id": "electronico-3",
+      "imagen": "./images/smartwatch.jpg",
+      "nombre": "Smarwatch",
+      "precio": "2500",
+      "stock": "10"
+    },
+    {
+      "id": "ropa-1",
+      "imagen": "./images/sneakers.jpg",
+      "nombre": "Sneakers",
+      "precio": "1300",
+      "stock": "5"
+    }
+  ]
