@@ -8,7 +8,7 @@ const cantidadproducto = document.querySelector('.count-cart');
 
 /*Cargar archivos del json*/ 
 async function cargarproductos() {
-    fetch("../js/productos.json")
+    fetch("js/productos.json")
     .then(response => {
         if (!response.ok) {
             throw new Error(`Error en la respuesta: ${response.status}`);
