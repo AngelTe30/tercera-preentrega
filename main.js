@@ -20,9 +20,6 @@ async function cargarproductos() {
         console.log("Productos cargados:", productos); // Verifica los productos cargados
         mostrarProductos(productos);
     })
-    .catch(error => {
-        console.error("Error al cargar los productos:", error); // Muestra cualquier error de carga
-    });
 }
 
  /*funcion para ocultar y abrir el carrito*/ 
